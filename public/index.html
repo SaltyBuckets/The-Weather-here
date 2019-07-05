@@ -2,15 +2,22 @@
     <title>The Weather Here</title>
 
     <head>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
         <script src="sketch.js"></script>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <h1>The Data Selfie App</h1>
+        <h1>The Weather Here</h1>
 
     </head>
     <p>This is a Paragraph</p>
-    <p id='stuff'>The weather at <span id='place'></span> ( lat=<span id='lat'></span>,lon=<span id='lon'></span>) is
-        <span id='weather'></span>. The temperature is <span id='temp'></span>&deg;. </p>
+
+
+
+    <button id='kelvin'>kelvin</button>
+    <button id='celsius' onclick="displayDate()">Celsius</button>
+    <button id='fahren' onclick="displayDate()">Fahrenheit</button>
+
+
+    <p>The weather at <span id='place'></span> ( lat=<span id='lat'></span>,lon=<span id='lon'></span>) is
+        <span id='weather'></span>. The temperature is <span id='temp'></span>. </p>
     <img id="icon" src="" alt="weather icon">
 
     <body>
